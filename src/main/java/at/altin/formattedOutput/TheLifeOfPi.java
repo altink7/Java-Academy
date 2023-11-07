@@ -1,8 +1,9 @@
-<package at.altin.formattedOutput;
+package at.altin.formattedOutput;
 
+@SuppressWarnings("unused")
 public class TheLifeOfPi {
 
-    /** PI_CONSTANT als alternative zu der Zahl selber*/
+    /** PI_CONSTANT als Alternative zu der Zahl selber*/
     public static final double PI_CONSTANT = Math.PI;
 
     /**
@@ -55,17 +56,17 @@ public class TheLifeOfPi {
 
 
         System.out.println("Alternative Format");
-        String defaultFormatedPi = String.format("Default formatting: %f", pi);
-        String formatedPi12CharsWide = String.format("12 characters wide: %12f", pi);
-        String formatedPi12CharsWideWithTwoDigitsAfterDecimalPoint = String.format("12 characters wide with exactly two digits after the decimal point: %12.2f", pi);
-        String formatedPi10CharsWideWithoutFractionalPart = String.format("10 characters wide without fractional part: %10.0f", pi);
-        String formatedPi13CharsWideWith11DigitsAfterDecimalPoint = String.format("13 characters wide with 11 digits after the decimal point: %13.11f", pi);
+        String defaultFormattedPi = String.format("Default formatting: %f", pi);
+        String formattedPi12CharsWide = String.format("12 characters wide: %12f", pi);
+        String formattedPi12CharsWideWithTwoDigitsAfterDecimalPoint = String.format("12 characters wide with exactly two digits after the decimal point: %12.2f", pi);
+        String formattedPi10CharsWideWithoutFractionalPart = String.format("10 characters wide without fractional part: %10.0f", pi);
+        String formattedPi13CharsWideWith11DigitsAfterDecimalPoint = String.format("13 characters wide with 11 digits after the decimal point: %13.11f", pi);
         //TODO: analog die anderen
 
-        System.out.println(defaultFormatedPi);
-        System.out.println(formatedPi12CharsWide);
-        System.out.println(formatedPi12CharsWideWithTwoDigitsAfterDecimalPoint);
-        System.out.println(formatedPi10CharsWideWithoutFractionalPart);
-        System.out.println(formatedPi13CharsWideWith11DigitsAfterDecimalPoint);
+        System.out.println(defaultFormattedPi);
+        System.out.println(formattedPi12CharsWide);
+        System.out.println(formattedPi12CharsWideWithTwoDigitsAfterDecimalPoint);
+        System.out.println(formattedPi10CharsWideWithoutFractionalPart);
+        System.out.println(formattedPi13CharsWideWith11DigitsAfterDecimalPoint);
     }
 }
