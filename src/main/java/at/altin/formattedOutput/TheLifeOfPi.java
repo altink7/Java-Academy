@@ -1,6 +1,9 @@
-package at.altin.formattedOutput;
+<package at.altin.formattedOutput;
 
 public class TheLifeOfPi {
+
+    /** PI_CONSTANT als alternative zu der Zahl selber*/
+    public static final double PI_CONSTANT = Math.PI;
 
     /**
      * This is the main method of the class TheLifeOfPi. <br>
@@ -21,6 +24,10 @@ public class TheLifeOfPi {
         // The Life of Pi
         System.out.println("The Life of Pi");
         System.out.println("--------------");
+
+        // normally use the constant Math.PI for better Readability or
+        // extract Constant with IntelliJ -> Refactor -> Introduce Constant to increase Readability
+        // magic Numbers are Bad Practice
         double pi = 3.14159265359;
 
         System.out.println("Default formatting: " + pi);
@@ -41,6 +48,12 @@ public class TheLifeOfPi {
      * @param pi PI
      */
     private static void alternativeFormat(double pi) {
+
+        if(pi < 3.13 || pi > 3.15) {
+            System.out.println("check PI if right!");
+        }
+
+
         System.out.println("Alternative Format");
         String defaultFormatedPi = String.format("Default formatting: %f", pi);
         String formatedPi12CharsWide = String.format("12 characters wide: %12f", pi);
