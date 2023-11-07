@@ -21,28 +21,33 @@ public class TheLifeOfPi {
         // The Life of Pi
         System.out.println("The Life of Pi");
         System.out.println("--------------");
-        float pi = 3.14159265359F;
+        double pi = 3.14159265359;
 
         System.out.println("Default formatting: " + pi);
         System.out.printf("12 characters wide: %12f\n", pi);
-        System.out.printf("10 characters wide without fractional part: %10.0f\n", pi);
-        System.out.printf("13 Characters wide with 11  digits after the point: %13.11f \n", pi);
         System.out.printf("15 chars wide with two digits after the decimal point: %15.2f\n", pi);
+        System.out.printf("10 characters wide without fractional part: %10.0f\n", pi);
+        System.out.printf("13 chars + 11 after comma: %13.11f\n", pi);
+        System.out.printf("15 digits wide with leading zeros: %015f\n", pi);
+        System.out.printf("15 characters wide, with two digits after the decimal point and leading zeros and sign: %015.2f\n", pi);
 
 
         alternativeFormat(pi);
 
     }
 
-    private static void alternativeFormat(float pi) {
+    /**
+     * ALTERNATIVE FORMAT
+     * @param pi PI
+     */
+    private static void alternativeFormat(double pi) {
         System.out.println("Alternative Format");
-        // ALTERNATIVE
         String defaultFormatedPi = String.format("Default formatting: %f", pi);
         String formatedPi12CharsWide = String.format("12 characters wide: %12f", pi);
         String formatedPi12CharsWideWithTwoDigitsAfterDecimalPoint = String.format("12 characters wide with exactly two digits after the decimal point: %12.2f", pi);
         String formatedPi10CharsWideWithoutFractionalPart = String.format("10 characters wide without fractional part: %10.0f", pi);
         String formatedPi13CharsWideWith11DigitsAfterDecimalPoint = String.format("13 characters wide with 11 digits after the decimal point: %13.11f", pi);
-
+        //TODO: analog die anderen
 
         System.out.println(defaultFormatedPi);
         System.out.println(formatedPi12CharsWide);
