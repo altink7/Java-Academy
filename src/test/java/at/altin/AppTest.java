@@ -1,4 +1,4 @@
-package at.altin.modeltester;
+package at.altin;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
