@@ -9,6 +9,7 @@ public class Cube {
     @SuppressWarnings("unused")
     static Scanner SCANNER = new Scanner(System.in);
 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -27,9 +28,10 @@ public class Cube {
         System.out.printf("\nSurface Area: %.2f", surfaceArea);
         System.out.printf("\nVolume: %.2f\n", volume);
 
+
         System.out.println("##############################");
 
-
+/**/
         System.out.printf("\nLength of a side: %d", lengthOfASide);
         System.out.printf("\nSurface Area: %.2f", surfaceAreaAlt);
         System.out.printf("\nVolume: %.2f\n", volumeAlt);
