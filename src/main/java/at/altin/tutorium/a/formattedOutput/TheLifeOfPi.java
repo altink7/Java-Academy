@@ -1,4 +1,4 @@
-package at.altin.formattedOutput;
+package at.altin.tutorium.a.formattedOutput;
 
 @SuppressWarnings("unused")
 public class TheLifeOfPi {

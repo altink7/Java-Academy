@@ -1,4 +1,4 @@
-package at.altin.formatedBsp;
+package at.altin.tutorium.a.formatedBsp;
 
 public class FormattedBspAll {
 
