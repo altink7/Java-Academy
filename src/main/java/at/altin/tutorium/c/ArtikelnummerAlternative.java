@@ -6,15 +6,15 @@ public class ArtikelnummerAlternative {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int getraenk;
+        int artikelgruppe;
         int untergruppe=0;
         int artikel=0;
         boolean falsch = false;
 
         System.out.print(": ");
-        getraenk = scanner.nextInt();
+        artikelgruppe = scanner.nextInt();
 
-        if (getraenk < 1 || getraenk > 3) {
+        if (artikelgruppe < 1 || artikelgruppe > 3) {
             falsch = true;
         }
 
@@ -23,9 +23,9 @@ public class ArtikelnummerAlternative {
             untergruppe = scanner.nextInt();
         }
 
-        if ((getraenk == 1 && (untergruppe < 1 || untergruppe > 3)) ||
-                (getraenk == 2 && untergruppe != 1 && untergruppe != 2 && untergruppe != 9) ||
-                (getraenk == 3 && untergruppe != 1)) {
+        if ((artikelgruppe == 1 && (untergruppe < 1 || untergruppe > 3)) ||
+                (artikelgruppe == 2 && untergruppe != 1 && untergruppe != 2 && untergruppe != 9) ||
+                (artikelgruppe == 3 && untergruppe != 1)) {
             falsch = true;
         }
 
@@ -34,7 +34,7 @@ public class ArtikelnummerAlternative {
             artikel = scanner.nextInt();
         }
 
-        if (getraenk == 1) {
+        if (artikelgruppe == 1) {
             if (untergruppe == 1 && artikel == 1) {
                 System.out.println("Bier (hell, 0,5)");
             }
@@ -62,7 +62,7 @@ public class ArtikelnummerAlternative {
                 falsch = true;
             }
 
-        } else if (getraenk == 2) {
+        } else if (artikelgruppe == 2) {
             if (untergruppe == 1 && artikel == 1) {
                 System.out.println("Schnitzel");
             } else if (untergruppe == 1 && artikel == 2) {
@@ -76,7 +76,7 @@ public class ArtikelnummerAlternative {
             } else {
                 falsch = true;
             }
-        } else if (getraenk == 3) {
+        } else if (artikelgruppe == 3) {
             if (untergruppe == 1 && artikel == 1) {
                 System.out.println("Zigaretten");
             } else
