@@ -94,6 +94,7 @@ public class Artikelnummer {
                 }
             }
         } else {
+            //TODO: bei jeder Verschachtelung eventuell
             System.out.println("Falsche Eingabe");
         }
 
