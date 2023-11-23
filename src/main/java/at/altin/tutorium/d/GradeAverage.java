@@ -2,13 +2,14 @@ package at.altin.tutorium.d;
 
 import java.util.Scanner;
 
-public class GradeAverage {
+public class GradeAverage implements Runnable {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int amount = 4;
         int[] grades = new int[amount];
         int i = 0;
+
         while (i < grades.length) {
             System.out.printf("%d Grade: ", (i + 1));
             int aktuellerWert = input.nextInt();
@@ -31,5 +32,10 @@ public class GradeAverage {
         }
 
         return sum / (size > 0 ? size : 1);
+    }
+
+    @Override
+    public void run() {
+        main(null);
     }
 }

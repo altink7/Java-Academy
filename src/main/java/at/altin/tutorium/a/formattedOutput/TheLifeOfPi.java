@@ -1,7 +1,7 @@
 package at.altin.tutorium.a.formattedOutput;
 
 @SuppressWarnings("unused")
-public class TheLifeOfPi {
+public class TheLifeOfPi implements Runnable {
 
     /** PI_CONSTANT als Alternative zu der Zahl selber*/
     public static final double PI_CONSTANT = Math.PI;
@@ -68,5 +68,10 @@ public class TheLifeOfPi {
         System.out.println(formattedPi12CharsWideWithTwoDigitsAfterDecimalPoint);
         System.out.println(formattedPi10CharsWideWithoutFractionalPart);
         System.out.println(formattedPi13CharsWideWith11DigitsAfterDecimalPoint);
+    }
+
+    @Override
+    public void run() {
+        main(null);
     }
 }

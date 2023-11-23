@@ -2,7 +2,7 @@ package at.altin.tutorium.b;
 
 import java.util.Scanner;
 
-public class Oktal {
+public class Oktal implements Runnable {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,4 +21,10 @@ public class Oktal {
         System.out.printf("\nOutput(dezimal): %d", dezimal);
         sc.close();
     }
+
+        @Override
+        public void run() {
+            main(null);
+        }
+
 }

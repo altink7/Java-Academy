@@ -2,7 +2,7 @@ package at.altin.tutorium.c;
 
 import java.util.Scanner;
 
-public class Diagonale {
+public class Diagonale implements Runnable {
 
     public static final char DIAGONAL_SYMBOL = '*';
     public static final char STANDARD_SYMBOL = '-';
@@ -36,4 +36,8 @@ public class Diagonale {
     }
 
 
+    @Override
+    public void run() {
+        main(null);
+    }
 }
