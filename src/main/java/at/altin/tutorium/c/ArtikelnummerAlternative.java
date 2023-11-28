@@ -35,47 +35,10 @@ public class ArtikelnummerAlternative {
         }
 
         if (artikelgruppe == 1) {
-            if (untergruppe == 1 && artikel == 1) {
-                System.out.println("Bier (hell, 0,5)");
-            }
-            else if (untergruppe == 1 && artikel == 2) {
-                System.out.println("Bier (hell, 0,33)");
-            }
-            else if (untergruppe == 1 && artikel == 3) {
-                System.out.println("Zwickel (0,5)");
-            }
-            else if (untergruppe == 1 && artikel == 4) {
-                System.out.println("Zwickel (0,33)");
-            }
-            else if (untergruppe == 2 && artikel == 1) {
-                System.out.println("Cola");
-            }
-            else if (untergruppe == 2 && artikel == 2) {
-                System.out.println("Fanta");
-            }
-            else if (untergruppe == 3 && artikel == 1) {
-                System.out.println("Rotwein");
-            }
-            else if (untergruppe == 3 && artikel == 2) {
-                System.out.println("Weisser Spritzer");
-            } else {
-                falsch = true;
-            }
+            falsch = runArtikelGruppeandCheck(untergruppe, artikel, falsch);
 
         } else if (artikelgruppe == 2) {
-            if (untergruppe == 1 && artikel == 1) {
-                System.out.println("Schnitzel");
-            } else if (untergruppe == 1 && artikel == 2) {
-                System.out.println("Schweinsbraten");
-            }
-            else if (untergruppe == 2 && artikel == 1) {
-                System.out.println("Frankfurter");
-            }
-            else if (untergruppe == 9 && artikel == 1) {
-                System.out.println("Ketchup");
-            } else {
-                falsch = true;
-            }
+            falsch = runEssenAndCheck(untergruppe, artikel, falsch);
         } else if (artikelgruppe == 3) {
             if (untergruppe == 1 && artikel == 1) {
                 System.out.println("Zigaretten");
@@ -88,5 +51,52 @@ public class ArtikelnummerAlternative {
         }
 
         scanner.close();
+    }
+
+    private static boolean runEssenAndCheck(int untergruppe, int artikel, boolean falsch) {
+        if (untergruppe == 1 && artikel == 1) {
+            System.out.println("Schnitzel");
+        } else if (untergruppe == 1 && artikel == 2) {
+            System.out.println("Schweinsbraten");
+        }
+        else if (untergruppe == 2 && artikel == 1) {
+            System.out.println("Frankfurter");
+        }
+        else if (untergruppe == 9 && artikel == 1) {
+            System.out.println("Ketchup");
+        } else {
+            falsch = true;
+        }
+        return falsch;
+    }
+
+    private static boolean runArtikelGruppeandCheck(int untergruppe, int artikel, boolean falsch) {
+        if (untergruppe == 1 && artikel == 1) {
+            System.out.println("Bier (hell, 0,5)");
+        }
+        else if (untergruppe == 1 && artikel == 2) {
+            System.out.println("Bier (hell, 0,33)");
+        }
+        else if (untergruppe == 1 && artikel == 3) {
+            System.out.println("Zwickel (0,5)");
+        }
+        else if (untergruppe == 1 && artikel == 4) {
+            System.out.println("Zwickel (0,33)");
+        }
+        else if (untergruppe == 2 && artikel == 1) {
+            System.out.println("Cola");
+        }
+        else if (untergruppe == 2 && artikel == 2) {
+            System.out.println("Fanta");
+        }
+        else if (untergruppe == 3 && artikel == 1) {
+            System.out.println("Rotwein");
+        }
+        else if (untergruppe == 3 && artikel == 2) {
+            System.out.println("Weisser Spritzer");
+        } else {
+            falsch = true;
+        }
+        return falsch;
     }
 }
