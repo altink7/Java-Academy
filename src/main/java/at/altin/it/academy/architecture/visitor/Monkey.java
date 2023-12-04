@@ -1,6 +1,7 @@
 package at.altin.it.academy.architecture.visitor;
 
 class Monkey implements Animal {
+
     @Override
     public void accept(AnimalVisitor visitor) {
         visitor.visit(this);
