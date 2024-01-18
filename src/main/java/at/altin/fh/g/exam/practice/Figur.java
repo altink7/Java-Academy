@@ -2,6 +2,7 @@ package at.altin.fh.g.exam.practice;
 
 /**
  * Abstract Class Figur
+ * koordianten beginnen immer oben links
  */
 public abstract class Figur {
     private double xKoord;

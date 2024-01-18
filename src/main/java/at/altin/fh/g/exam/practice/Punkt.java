@@ -8,6 +8,11 @@ public class Punkt extends Figur{
 
     @Override
     boolean enthaelt(Punkt pPunkt) {
-        return false;
+        return pPunkt.getyKoord() == getyKoord() && pPunkt.getxKoord() == getxKoord();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Punkt, x: %f , y: %f", getxKoord(), getyKoord());
     }
 }

@@ -5,24 +5,31 @@ public class Kreis extends Figur implements Flaeche{
     private double radius;
 
 
-    public Kreis(double xKoord, double yKoord) {
+    public Kreis(double xKoord, double yKoord, double radius) {
         super(xKoord, yKoord);
+        this.radius = radius;
     }
 
     @Override
     boolean enthaelt(Punkt pPunkt) {
-        //TODO: enhaelt die Form den Punkt
+        //TODO : google
         return false;
     }
 
     public Punkt getMittelpunkt() {
-        //TODO berechne Mittelpunkt, und return ein richtigen Punkt
-        return new Punkt(1.0,1.0);
+        return new Punkt(getxKoord() + radius,getyKoord() - radius);
     }
 
     @Override
     public double flaechenInhalt() {
-        // TODO: berechne Flaechen Inhalt
-        return 0;
+        // formel fuer kreisflaeche: pi * r^2
+        return Math.PI * Math.pow(radius, 2);
+    }
+
+    @Override
+    public String toString() {
+        return "Kreis{" +
+                "radius=" + radius +
+                '}';
     }
 }
