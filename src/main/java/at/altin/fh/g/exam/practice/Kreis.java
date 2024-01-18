@@ -12,8 +12,9 @@ public class Kreis extends Figur implements Flaeche{
 
     @Override
     boolean enthaelt(Punkt pPunkt) {
-        //TODO : google
-        return false;
+        // formel fuer kreis: (x - x0)^2 + (y - y0)^2 <= r^2
+        return Math.pow(pPunkt.getxKoord() - getxKoord(), 2)
+                + Math.pow(pPunkt.getyKoord() - getyKoord(), 2) <= Math.pow(radius, 2);
     }
 
     public Punkt getMittelpunkt() {
