@@ -85,17 +85,5 @@
         </entry>
       </map>
     </option>
-    <option name="flexibleSearchSettings">
-      <FlexibleSearchSettings />
-    </option>
-    <option name="groovySettings">
-      <GroovySettings />
-    </option>
-    <option name="impexSettings">
-      <ImpexSettings />
-    </option>
-    <option name="polyglotQuerySettings">
-      <PolyglotQuerySettings />
-    </option>
   </component>
 </project>
