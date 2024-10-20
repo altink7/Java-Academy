@@ -1,6 +1,4 @@
-package at.altin.fh.lpw;
-
-import java.util.ArrayList;
+package at.altin.fh.lpw.workshopexample;
 
 public class Workshop {
     private Worker[] workers = new Worker[2];

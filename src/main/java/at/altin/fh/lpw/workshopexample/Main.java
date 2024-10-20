@@ -1,6 +1,4 @@
-package at.altin.fh.lpw;
-
-import at.altin.fh.demo.*;
+package at.altin.fh.lpw.workshopexample;
 
 public class Main {
 

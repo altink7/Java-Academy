@@ -1,4 +1,4 @@
-package at.altin.fh.lpw;
+package at.altin.fh.lpw.workshopexample;
 
 public class JuniorWorker extends Worker {
 
