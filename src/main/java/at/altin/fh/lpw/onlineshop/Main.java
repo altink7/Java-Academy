@@ -14,7 +14,9 @@ public class Main {
         annaMusterfrau.setEmail("anna@musterfrau.com");
         annaMusterfrau.setAdresse("Hauptstraße 1, 1400 Entenhausen");
 
+        kunden[2] = annaMusterfrau;
         Bestellung bestellung = bestellen(annaMusterfrau);
+        Bestellung bestellung2 = bestellen(kunden[0]);
 
         //BESTELLUNG
         //        ===========
@@ -25,6 +27,12 @@ public class Main {
         //Rabatt: 47,74
         //Gesamtpreis: 907,06
         printBestellung(bestellung);
+        printBestellung(bestellung2);
+
+        System.out.println("--------------------------------------------------------");
+        printBestellungUsingToString(bestellung);
+        printBestellungUsingToString(bestellung2);
+
     }
 
     private static void printBestellung(Bestellung bestellung) {
@@ -32,16 +40,45 @@ public class Main {
         System.out.println("===========");
         System.out.println("Kunde: " + bestellung.getKunde().getName() + " (" + bestellung.getKunde().getEmail() + "), " + bestellung.getKunde().getAdresse());
         Produkt[] produkte = bestellung.getProdukte();
+
         for (int i = 0; i < produkte.length; i++) {
             Produkt produkt = produkte[i];
 
-            if(produkt == null) {
-                break;
+            if(produkt != null) {
+                System.out.println("Pos " + produkt.getNummer() + ": " + produkt.getBezeichnung() + " " + produkt.getPreis());
             }
-
-            System.out.println("Pos " + produkt.getNummer() + ": " + produkt.getBezeichnung() + " " + produkt.getPreis());
         }
-        System.out.println("Rabatt: " + (bestellung.getGesamtPreis() - bestellung.getGesamtPreis() * 0.95));
+
+        System.out.println("Rabatt: " + (bestellung.getGesamtPreis() - bestellung.getGesamtPreis() / 0.95));
+        System.out.println("Gesamtpreis: " + bestellung.getGesamtPreis());
+    }
+
+    private static void printBestellungUsingToString(Bestellung bestellung) {
+        System.out.println("BESTELLUNG");
+        System.out.println("===========");
+        System.out.println(bestellung.getKunde().toString());
+
+        Produkt[] produkte = bestellung.getProdukte();
+
+        for (int i = 0; i < produkte.length; i++) {
+            Produkt produkt = produkte[i];
+
+            if(produkt != null) {
+                System.out.println(produkt);
+            }
+        }
+
+
+
+        // Helfer methode um den vollen Preis zu berechnen ( einfach alle Preise zusammenzählen von allen Produkten)
+        double vollerPreis =0 ;
+        for (Produkt produkt : produkte) {
+            if (produkt != null) {
+                vollerPreis += produkt.getPreis();
+            }
+        }
+
+        System.out.println("Rabatt: " + (vollerPreis - bestellung.getGesamtPreis()));
         System.out.println("Gesamtpreis: " + bestellung.getGesamtPreis());
     }
 

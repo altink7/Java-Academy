@@ -1,5 +1,7 @@
 package at.altin.fh.lpw.onlineshop;
 
+import java.util.Arrays;
+
 public class Bestellung {
     private int nummer;
     private Kunde kunde;
@@ -12,11 +14,9 @@ public class Bestellung {
         for (int i = 0; i < produkte.length; i++) {
             Produkt produkt = produkte[i];
 
-            if (produkt == null) {
-                break;
+            if (produkt != null) {
+                gesamtPreis+=produkt.getPreis();
             }
-
-            gesamtPreis+=produkt.getPreis();
         }
 
         if(kunde instanceof RegistrierterKunde) {

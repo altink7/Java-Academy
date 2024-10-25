@@ -38,6 +38,11 @@ public class Kunde {
     public void setWarenkorb(Warenkorb warenkorb) {
         this.warenkorb = warenkorb;
     }
+
+    @Override
+    public String toString() {
+        return "Kunde: " + name + " (" + email + "), " + adresse;
+    }
 }
 
 

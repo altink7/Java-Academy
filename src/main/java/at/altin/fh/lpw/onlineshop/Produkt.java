@@ -37,4 +37,9 @@ public class Produkt {
     public void setNummer(int nummer) {
         this.nummer = nummer;
     }
+
+    @Override
+    public String toString() {
+        return "Pos " + nummer + ": " + bezeichnung + " " + preis;
+    }
 }

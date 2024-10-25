@@ -7,7 +7,6 @@ public class Warenkorb {
     private Produkt[] produkte = new Produkt[100];
 
     public void addProdukt(Produkt produkt) {
-
         for (int i = 0; i < produkte.length; i++) {
             Produkt produktOfList = produkte[i];
 
