@@ -4,7 +4,6 @@ public class Kunde {
     private String email;
     private String name;
     private String adresse;
-
     public Warenkorb warenkorb;
 
     public Kunde(){
