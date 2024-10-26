@@ -1,6 +1,6 @@
 package at.altin.fh.lpw.bank;
 
-public class TestBank {
+public class Main {
 
     public static void main(String[] args) {
 

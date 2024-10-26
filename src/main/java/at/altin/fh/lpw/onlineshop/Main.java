@@ -35,7 +35,7 @@ public class Main {
 
     }
 
-    private static void printBestellung(Bestellung bestellung) {
+    public static void printBestellung(Bestellung bestellung) {
         System.out.println("BESTELLUNG");
         System.out.println("===========");
         System.out.println("Kunde: " + bestellung.getKunde().getName() + " (" + bestellung.getKunde().getEmail() + "), " + bestellung.getKunde().getAdresse());
@@ -53,7 +53,7 @@ public class Main {
         System.out.println("Gesamtpreis: " + bestellung.getGesamtPreis());
     }
 
-    private static void printBestellungUsingToString(Bestellung bestellung) {
+    public static void printBestellungUsingToString(Bestellung bestellung) {
         System.out.println("BESTELLUNG");
         System.out.println("===========");
         System.out.println(bestellung.getKunde().toString());
