@@ -30,6 +30,11 @@ public class Hubschrauber extends Luftfahrzeug{
             setStatusSeilwinde(true);
             System.out.println("Status: " + isStatusSeilwinde());
         }
+
+
+        // ALTERNATIVE: set status to the opposite of the current status
+        // setStatusSeilwinde(!isStatusSeilwinde());
+        // System.out.println("Status: " + isStatusSeilwinde());
     }
 
     public int getAnzahlSitzplaetze() {
