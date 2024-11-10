@@ -15,4 +15,10 @@ public class Jumping extends Event {
     public void setType(JumpTyp type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        // High Jump Jumping Event
+        return "%s %s Event".formatted(type.name(), getClass().getSimpleName());
+    }
 }

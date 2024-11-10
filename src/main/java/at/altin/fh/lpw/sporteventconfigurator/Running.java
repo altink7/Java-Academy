@@ -6,11 +6,8 @@ public class Running extends Event{
     public Running(String name, int meters) {
         super(name);
 
-        if(meters < 50 ){
-            this.meters = 50;
-        } else {
-            this.meters = meters;
-        }
+        // if meters smaller than 50 then take '50 meters' as default
+        this.meters = Math.max(meters, 50);
     }
 
     public int getMeters() {
@@ -20,4 +17,11 @@ public class Running extends Event{
     public void setMeters(int meters) {
         this.meters = meters;
     }
+
+    @Override
+    public String toString() {
+        // 4200 Meters Running
+        return "%d Meters %s".formatted(meters, getClass().getSimpleName());
+    }
+
 }

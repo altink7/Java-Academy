@@ -4,14 +4,14 @@ public class JuniorGames extends SportEvent{
 
     @Override
     void evaluate(EventPlan eventPlan) {
-        int countTypen = 0;
 
-        if(eventPlan == null) {
+        if(eventPlan == null || eventPlan.getEvents() == null) {
             System.out.println("ERROR");
             return;
         }
 
         for (int i = 0; i < eventPlan.getEvents().length; i++) {
+            int countTypen = 0;
             Event event = eventPlan.getEvents()[i];
 
 
@@ -30,9 +30,5 @@ public class JuniorGames extends SportEvent{
                 }
             }
         }
-
-
-
-
     }
 }
