@@ -3,13 +3,13 @@ package at.altin.fh.lpw.workshopexample;
 public class Main {
 
     public static void main(String[] args) {
-        //Workshop w = new Workshop();
-        //w.addWorker(new SeniorWorker("Tom"));
-        //w.addWorker(new JuniorWorker("Tina"));
-        //
-        //w.setJob(new CarInspection(new Audi(2010)));
-        //
-        //w.printReport();
+        Workshop w = new Workshop();
+        w.addWorker(new SeniorWorker("Tom"));
+        w.addWorker(new JuniorWorker("Tina"));
+
+        w.setJob(new CarInspection(new Audi(2010)));
+
+        w.printReport();
     }
 
     /*

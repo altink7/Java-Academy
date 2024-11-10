@@ -1,4 +1,4 @@
-package at.altin.fh.demo;
+package at.altin.fh.lpw.workshopexample;
 
 public abstract class Car {
     protected int year;

@@ -1,6 +1,6 @@
-package at.altin.fh.demo;
+package at.altin.fh.lpw.workshopexample;
 
-public class CarInspection implements Job{
+public class CarInspection implements Job {
     private Car car;
 
     public CarInspection(Car car) {

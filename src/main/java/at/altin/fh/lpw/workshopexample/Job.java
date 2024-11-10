@@ -1,10 +1,7 @@
 package at.altin.fh.lpw.workshopexample;
 
-public abstract class Job {
-
-    abstract int getMinNumberOfWorkers();
-
-    abstract int getBasePrice();
-
-    abstract int getHours();
+public interface Job {
+    int getMinNumberOfWorkers();
+    int getBasePrice();
+    int getHours();
 }

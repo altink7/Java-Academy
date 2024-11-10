@@ -1,6 +1,6 @@
 package at.altin.fh.lpw.workshopexample;
 
-public class SeniorWorker extends Worker {
+public class SeniorWorker extends Worker{
 
     public SeniorWorker(String name) {
         super(name);
@@ -8,6 +8,12 @@ public class SeniorWorker extends Worker {
 
     @Override
     int getHourlyRate() {
-        return 0;
+        return 50;
+    }
+
+    @Override
+    public String toString() {
+        return "Senior (%s)".formatted(name);
     }
 }
+
