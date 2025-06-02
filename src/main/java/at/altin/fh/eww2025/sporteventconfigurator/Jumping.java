@@ -15,4 +15,9 @@ public class Jumping extends Event {
     public void setType(JumpType type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "- " + this.type + " Jumping Event";
+    }
 }

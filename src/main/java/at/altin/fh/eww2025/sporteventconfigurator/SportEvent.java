@@ -1,5 +1,5 @@
 package at.altin.fh.eww2025.sporteventconfigurator;
 
 public interface SportEvent {
-    void evaluate(EventPlan eventPlan);
+    void evaluate(EventPlan eventPlan) throws IllegalArgumentException;
 }

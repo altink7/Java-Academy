@@ -1,7 +1,5 @@
 package at.altin.fh.eww2025.sporteventconfigurator;
 
-import at.altin.fh.lpw.sporteventconfigurator.*;
-
 public class Main {
     public static void main(String[] args) {
 SportEvent event = new JuniorGames();
