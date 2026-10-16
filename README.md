@@ -10,6 +10,8 @@ Welcome to the **Java Academy** repository, a comprehensive collection of Java c
 3. [Pattern Examples](#pattern-examples)
 4. [Java Fundamentals](#java-fundamentals)
 5. [Tutorials & Examples](#tutorials--examples)
+
+    5a.[EWW](#eww)
 6. [Contributing](#contributing)
 7. [License](#license)
 
@@ -56,6 +58,10 @@ Each tutorial is presented with step-by-step code examples, covering topics such
 - Common Algorithms and Data Structures
 - File I/O and Networking
 - Multithreading and Concurrency
+
+## EWW
+
+1. src/main/java/at/altin/fh/eww2026 -> Year 2026
 
 ## Contributing
 
